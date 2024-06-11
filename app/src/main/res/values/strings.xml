@@ -1,0 +1,16 @@
+<resources>
+    <string name="temperatura">Temperatura</string>
+    <string name="escala">Escala</string>
+    <string name="titulo">Conversor de Temperatura</string>
+    <string name="titulo1">Conversor de Longitudes</string>
+    <string name="titulo2">Escala 1:</string>
+    <string name="CajaL">Digite la Longitud</string>
+    <string name="CajaLC">Longitud Convertida</string>
+    <string name="titulo3">Escala 2:</string>
+    <string name="titulo4">Digite la Temperatura</string>
+    <string name="titulo5">Temperatura Convertida</string>
+    <string name="Boton1">Atras</string>
+    <string name="Boton2">Limpiar</string>
+    <string name="Boton3">Calcular</string>
+
+</resources>

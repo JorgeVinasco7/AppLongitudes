@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "218785390368",
+    "project_id": "login-app-a4077",
+    "storage_bucket": "login-app-a4077.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218785390368:android:ac389fcb8f43a3ecd48145",
+        "android_client_info": {
+          "package_name": "com.aristidev.googleloginapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd8hpgYKjB67K7CrRcmIuU5SmtncRCbxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
