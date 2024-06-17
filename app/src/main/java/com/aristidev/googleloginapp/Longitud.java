@@ -197,7 +197,9 @@ public class Longitud extends AppCompatActivity {
                     //LONGITUD METROS--------------------------------------------------------------------------------------------------
                     //DE METROS A CENTIMETROS
                     else if (Selec1.equals("Metros->m") && Selec2.equals("Centimetros->Cm")) {
-                        Double Centimetros =
+                        Double Centimetro = long1*100;
+                        String Centimetros = String.valueOf(Centimetro);
+                        longitud2.setText(Centimetros);
                     }
                 }
             }
