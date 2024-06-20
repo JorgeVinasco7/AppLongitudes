@@ -201,7 +201,23 @@ public class Longitud extends AppCompatActivity {
                         String Centimetros = String.valueOf(Centimetro);
                         longitud2.setText(Centimetros);
                     }
+                    //METROS A METROS
+                    //SI SON UNIDADES IGUALES DE METROS A METROS------------------------------------------------------------------------
+                    else if(Selec1.equals("Metros->m") && Selec2.equals("Metros->m")){
+                        AlertDialog.Builder Alerta = new AlertDialog.Builder(Longitud.this);
+                        Alerta.setIcon(R.drawable.error);
+                        Alerta.setTitle("ERROR:");
+                        Alerta.setMessage("Son las mismas mismas unidades de Longitud.");
+                        Alerta.setNegativeButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        }).show();
                 }
+                    //METROS A KILOMETROS
+
+
             }
         });
 
