@@ -216,7 +216,11 @@ public class Longitud extends AppCompatActivity {
                         }).show();
                 }
                     //METROS A KILOMETROS
-
+                    else if (Selec1.equals("Metros->m") && Selec2.equals("Kilometros->Km")) {
+                        Double Kilometro = long1/1000;
+                        String Kilometros = String.valueOf(Kilometro);
+                        longitud2.setText(Kilometros);
+                    }
 
             }
         });
