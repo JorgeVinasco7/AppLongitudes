@@ -222,8 +222,10 @@ public class Longitud extends AppCompatActivity {
                         longitud2.setText(Kilometros);
                     }
                    //METROS A MILLAS
-                    
-
+                    else if (Selec1.equals("Metros->m") && Selec2.equals("Millas->mi")) {
+                        Double Milla = long1/1609;
+                        String Millas = String.valueOf(Milla);
+                        longitud2.setText(Millas);
             }
         });
 
