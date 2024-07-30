@@ -52,6 +52,7 @@ public class Longitud extends AppCompatActivity {
                 String item = adapterView.getItemAtPosition(position).toString();
                 //Toast.makeText(temperatura.this, "Escala: " + item , Toast.LENGTH_SHORT).show();
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
@@ -77,6 +78,7 @@ public class Longitud extends AppCompatActivity {
                 String item = adapterView.getItemAtPosition(position).toString();
                 //Toast.makeText(temperatura.this, "Escala: " + item , Toast.LENGTH_SHORT).show();
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
@@ -121,7 +123,7 @@ public class Longitud extends AppCompatActivity {
                 String valor1 = longitud1.getText().toString();
 
                 //SI ESTA VACIO-------------------------------------------------------------------------------------
-                if(valor1.length() == 0){
+                if (valor1.length() == 0) {
                     AlertDialog.Builder Alerta1 = new AlertDialog.Builder(Longitud.this);
                     Alerta1.setIcon(R.drawable.error);
                     Alerta1.setTitle("ERROR:");
@@ -145,9 +147,9 @@ public class Longitud extends AppCompatActivity {
                     String Selec1 = Menu1.getSelectedItem().toString();
                     String Selec2 = Menu2.getSelectedItem().toString();
 
-                     //PARA CENTRIMETPO-----------------------------------------------------------------------------------------------------------
+                    //PARA CENTRIMETPO-----------------------------------------------------------------------------------------------------------
                     //SI SON UNIDADES IGUALES DE CENTIMETROS A CENTIMETROS------------------------------------------------------------------------
-                    if(Selec1.equals("Centimetros->Cm") && Selec2.equals("Centimetros->Cm")){
+                    if (Selec1.equals("Centimetros->Cm") && Selec2.equals("Centimetros->Cm")) {
                         AlertDialog.Builder Alerta = new AlertDialog.Builder(Longitud.this);
                         Alerta.setIcon(R.drawable.error);
                         Alerta.setTitle("ERROR:");
@@ -158,52 +160,52 @@ public class Longitud extends AppCompatActivity {
                                 dialog.cancel();
                             }
                         }).show();
-                    //SI ES DE CENTIMETROS A METROS--------------------------------------------------------------------
+                        //SI ES DE CENTIMETROS A METROS--------------------------------------------------------------------
                     } else if (Selec1.equals("Centimetros->Cm") && Selec2.equals("Metros->m")) {
-                        Double met = long1/100;
+                        Double met = long1 / 100;
                         String metros = String.valueOf(met);
                         longitud2.setText(metros);
                     }
                     //SI ES DE CENTIMETROS A KILOMETROS-----------------------------------------------------------------
                     else if (Selec1.equals("Centimetros->Cm") && Selec2.equals("Kilometros->Km")) {
-                            Double Kilo = long1/100000;
-                            String Kilometros = String.valueOf(Kilo);
-                            longitud2.setText(Kilometros);
+                        Double Kilo = long1 / 100000;
+                        String Kilometros = String.valueOf(Kilo);
+                        longitud2.setText(Kilometros);
                     }
                     //SI ES DE CENTIMETROS A MILLAS-----------------------------------------------------------------------
-                    else if(Selec1.equals("Centimetros->Cm") && Selec2.equals("Millas->mi")){
-                           Double Milla = long1/160900;
-                           String Millas = String.valueOf(Milla);
-                           longitud2.setText(Millas);
+                    else if (Selec1.equals("Centimetros->Cm") && Selec2.equals("Millas->mi")) {
+                        Double Milla = long1 / 160900;
+                        String Millas = String.valueOf(Milla);
+                        longitud2.setText(Millas);
                     }
                     //SI ES DE CENTIMETROS A YARDAS-----------------------------------------------------------------------
                     else if (Selec1.equals("Centimetros->Cm") && Selec2.equals("Yardas->yd")) {
-                           Double Yarda = long1/91.44;
-                           String Yardas = String.valueOf(Yarda);
-                           longitud2.setText(Yardas);
+                        Double Yarda = long1 / 91.44;
+                        String Yardas = String.valueOf(Yarda);
+                        longitud2.setText(Yardas);
                     }
                     //SI ES DE CENTIMETROS A PIES
                     else if (Selec1.equals("Centimetros->Cm") && Selec2.equals("Pies->ft")) {
-                        Double Pie = long1/30.48;
+                        Double Pie = long1 / 30.48;
                         String Pies = String.valueOf(Pie);
                         longitud2.setText(Pies);
                     }
                     //SI ES DE CENTIMETROS A PULGADAS
                     else if (Selec1.equals("Centimetros->Cm") && Selec2.equals("Pulgadas->in")) {
-                        Double Pulgada = long1/2.54;
+                        Double Pulgada = long1 / 2.54;
                         String Pulgadas = String.valueOf(Pulgada);
                         longitud2.setText(Pulgadas);
                     }
                     //LONGITUD METROS--------------------------------------------------------------------------------------------------
                     //DE METROS A CENTIMETROS
                     else if (Selec1.equals("Metros->m") && Selec2.equals("Centimetros->Cm")) {
-                        Double Centimetro = long1*100;
+                        Double Centimetro = long1 * 100;
                         String Centimetros = String.valueOf(Centimetro);
                         longitud2.setText(Centimetros);
                     }
                     //METROS A METROS
                     //SI SON UNIDADES IGUALES DE METROS A METROS------------------------------------------------------------------------
-                    else if(Selec1.equals("Metros->m") && Selec2.equals("Metros->m")){
+                    else if (Selec1.equals("Metros->m") && Selec2.equals("Metros->m")) {
                         AlertDialog.Builder Alerta = new AlertDialog.Builder(Longitud.this);
                         Alerta.setIcon(R.drawable.error);
                         Alerta.setTitle("ERROR:");
@@ -214,20 +216,40 @@ public class Longitud extends AppCompatActivity {
                                 dialog.cancel();
                             }
                         }).show();
-                }
+                    }
                     //METROS A KILOMETROS
                     else if (Selec1.equals("Metros->m") && Selec2.equals("Kilometros->Km")) {
-                        Double Kilometro = long1/1000;
+                        Double Kilometro = long1 / 1000;
                         String Kilometros = String.valueOf(Kilometro);
                         longitud2.setText(Kilometros);
                     }
-                   //METROS A MILLAS
+                    //METROS A MILLAS
                     else if (Selec1.equals("Metros->m") && Selec2.equals("Millas->mi")) {
-                        Double Milla = long1/1609;
+                        Double Milla = long1 / 1609;
                         String Millas = String.valueOf(Milla);
                         longitud2.setText(Millas);
+                    }
+                    //METROS A YARDAS
+                    else if (Selec1.equals("Metros->m") && Selec2.equals("Yardas->yd")) {
+                        Double Yarda = long1 * 1.09361;
+                        String Yardas = String.valueOf(Yarda);
+                        longitud2.setText(Yardas);
+                    }
+                    //METROS A PIES
+                    else if (Selec1.equals("Metros->m") && Selec2.equals("Pies->ft")) {
+                        Double Pie = long1 * 3.28084;
+                        String Pies = String.valueOf(Pie);
+                        longitud2.setText(Pies);
+                    }
+                    //METROS A PULGADAS
+                    else if (Selec1.equals("Metros->m") && Selec2.equals("Pulgadas->in")) {
+                        Double Pulgada = long1 * 39.3701;
+                        String Pulgadas = String.valueOf(Pulgada);
+                        longitud2.setText(Pulgadas);
+                    }
+
+                }
             }
         });
-
-      }
     }
+}
